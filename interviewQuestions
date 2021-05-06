@@ -1,3 +1,6 @@
+> Class , constructor, object function definition & syntax.
+> Reverse routing in laravel
+
 <?php //php 7.2.24
 for($i=0; $i<= 5; $i++) {
     for($j=0; $j< $i; $j++) {
@@ -45,6 +48,8 @@ if($arrayItem[$i] > $arrayItem[$i+1]) {
 
 } while($swap);
 
+
+// get 3rd row
 Method1:
 
 SELECT *
