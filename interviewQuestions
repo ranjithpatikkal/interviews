@@ -1,0 +1,77 @@
+<?php //php 7.2.24
+for($i=0; $i<= 5; $i++) {
+    for($j=0; $j< $i; $j++) {
+        echo $j % 2 . " ";
+    }
+    
+    echo "\n";
+}
+    
+?>
+
+// Palindrome
+<?php //php 7.2.24
+ $num = 1234321;
+$number = $num;
+$rev = 0;
+while($num > 0) {
+	$re = $num % 10;
+	$rev = $rev * 10 + $re;
+	$num = (int)($num / 10);
+}
+if($rev === $number) {
+	echo "It's as palindrome";
+} else {
+	echo "It's not a palindrome";
+}
+    
+?>
+
+array(12, 35, 1, 10, 34, 1);
+
+// Second largest element
+
+$arrayItem = array(12, 35, 1, 10, 34, 1);
+
+$swap = false;
+do {
+
+for($i = 0; $c = count($arrayItem)-1; $i <= $c  $i++) {
+if($arrayItem[$i] > $arrayItem[$i+1]) {
+	list($arrayItem[$i+1], $arrayItem[$i]) = array($arrayItem[$i], $arrayItem[$i+1]);
+	$swap = true;
+}
+}
+
+} while($swap);
+
+Method1:
+
+SELECT *
+FROM
+(
+   SELECT *
+   FROM emps
+   ORDER BY empid
+   LIMIT 3
+) AS T
+ORDER BY empid DESC
+LIMIT 1
+
+Method2:  
+
+SELECT *
+   FROM academic_periods
+   ORDER BY id
+   LIMIT 2, 1
+
+col1|col2
+123 | 3000
+234 | 23
+344 | 3
+432 | 444
+567 | 9000
+343 | 46
+tbl1
+
+
